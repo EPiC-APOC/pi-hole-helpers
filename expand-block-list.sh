@@ -122,7 +122,7 @@ echo "https://v.firebog.net/hosts/SB2o7Net.txt" | sudo tee -a /etc/pihole/adlist
 ##EXTRA/MORE/VARIOUS :
 ##echo "http://sysctl.org/cameleon/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                                #Pi_Hole_default #
 echo "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext" | sudo tee -a /etc/pihole/adlists.list > /dev/null
-echo "https://raw.githubusercontent.com/zpacman/Blockzilla/master/Blockzilla.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
+##echo "https://raw.githubusercontent.com/zpacman/Blockzilla/master/Blockzilla.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null                      #WRONG_FORMAT #
 echo "https://phishing.army/download/phishing_army_blocklist_extended.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 # All *_DOMBL datasets except CW_C2_DOMBL, TC_C2_DOMBL :
 echo "https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
