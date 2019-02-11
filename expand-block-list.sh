@@ -109,13 +109,13 @@ echo "https://ransomwaretracker.abuse.ch/downloads/TC_C2_URLBL.txt" | sudo tee -
 ##SEE; https://www.dshield.org/suspicious_domains.html: https://www.dshield.org/feeds/suspiciousdomains_High.txt | https://www.dshield.org/feeds/suspiciousdomains_Medium.txt | https://www.dshield.org/feeds/suspiciousdomains_Low.txt
 echo "https://www.dshield.org/feeds/suspiciousdomains_Low.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 
-
 ##https://github.com/EnergizedProtection/block :
 ##big-ass_lists @ https://energized.pro/#packs ;
 # [ Blu GO ]
 echo "https://raw.githubusercontent.com/EnergizedProtection/block/master/bluGo/formats/domains.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 # [Regional]
 echo "https://raw.githubusercontent.com/EnergizedProtection/block/master/extensions/regional/formats/domains.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
+
 
 ####YT:
 ##NOTE; the actual content is also delivered using similar domains; blocking this will prevent the video from playing        (*T*E*S*T*)
@@ -125,6 +125,7 @@ echo "https://jasonhill.co.uk/pfsense/ytadblock.txt" | sudo tee -a /etc/pihole/a
 echo "https://raw.githubusercontent.com/anudeepND/youtubeadsblacklist/master/domainlist.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 
 # ##############################################
+
 
 pihole -g -up
 #https://discourse.pi-hole.net/t/the-pihole-command-with-examples/738
