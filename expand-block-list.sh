@@ -1,3 +1,4 @@
+#!/bin/sh
 # ##############################################
 # Custom blacklist
 # ##############################################
@@ -27,6 +28,7 @@ echo "https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist" | sud
 echo "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://hosts-file.net/ad_servers.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
+
 
 # ##############################################
 
@@ -94,6 +96,7 @@ echo "https://v.firebog.net/hosts/AdguardDNS.txt" | sudo tee -a /etc/pihole/adli
 ##echo "https://v.firebog.net/hosts/Prigent-Ads.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                     #UNSURE#
 echo "https://v.firebog.net/hosts/SB2o7Net.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null  
 
+
 ##EXTRA/MORE/VARIOUS :
 ##echo "http://sysctl.org/cameleon/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                                #Pi_Hole_default#
 echo "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext" | sudo tee -a /etc/pihole/adlists.list > /dev/null
@@ -124,11 +127,26 @@ echo "https://jasonhill.co.uk/pfsense/ytadblock.txt" | sudo tee -a /etc/pihole/a
 ##[JijBuis] https://github.com/anudeepND/youtubeadsblacklist
 echo "https://raw.githubusercontent.com/anudeepND/youtubeadsblacklist/master/domainlist.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 
+
 # ##############################################
 
+echo ""
+echo "******************************"
+echo "*** updating pi-hole lists ***"
+echo "******************************"
+echo ""
 
 pihole -g -up
 #https://discourse.pi-hole.net/t/the-pihole-command-with-examples/738
 #pihole -g
 
 # ##############################################
+
+
+echo ""
+date >> /home/pi/scripts/pihole-update.log
+echo ""
+echo "******************************"
+echo "*** pi-hole lists updated  ***"
+echo "******************************"
+echo ""
