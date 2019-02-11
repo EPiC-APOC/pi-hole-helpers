@@ -39,7 +39,7 @@ echo "https://hosts-file.net/ad_servers.txt" | sudo tee -a /etc/pihole/adlists.l
 # ##############################################
 
 ##https://hosts-file.net/?s=Download :
-##https://hosts-file.net/ad_servers.txt                                                                                                                     #Pi_Hole_default#
+##https://hosts-file.net/ad_servers.txt                                                                                                                     #Pi_Hole_default #
 echo "https://hosts-file.net/emd.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://hosts-file.net/fsa.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://hosts-file.net/mmt.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
@@ -53,21 +53,21 @@ echo "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/EasyPrivacy3rd
 echo "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/EasyPrivacySpecific.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 
 ##https://github.com/StevenBlack/hosts :
-##echo "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                #Pi_Hole default: = Unified hosts file with base extensions (adware+malware) #
+##echo "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                #Pi_Hole_default: = Unified hosts file with base extensions (adware+malware) #
 ##echo "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null   # = Unified hosts + Fakenews + Gambling #
 ##echo "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null            # = Unified hosts + Gambling #
 
 ##https://tspprs.com/ :
 ##(Includes Basic Block Lists: Malware Domains/Cameleon/Zeustracker/Disconnect.me Tracking/Disconnect.me Ads/Hosts-file.net --SEEMS REDUNDANT)
 echo "https://tspprs.com/dl/abuse" | sudo tee -a /etc/pihole/adlists.list > /dev/null
-##echo "https://tspprs.com/dl/ads" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                                       #SEEMS_REDUNDANT#
+##echo "https://tspprs.com/dl/ads" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                                       #SEEMS_REDUNDANT #
 echo "https://tspprs.com/dl/crypto" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://tspprs.com/dl/gambling" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://tspprs.com/dl/ransomware" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://tspprs.com/dl/scam" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://tspprs.com/dl/spam" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://tspprs.com/dl/spotify" | sudo tee -a /etc/pihole/adlists.list > /dev/null
-##echo "https://tspprs.com/dl/tracking" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                                  #SEEMS_REDUNDANT#
+##echo "https://tspprs.com/dl/tracking" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                                  #SEEMS_REDUNDANT #
 
 ##https://github.com/CHEF-KOCH/CKs-FilterList :
 echo "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/HOSTS/Ads-tracker.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
@@ -81,24 +81,24 @@ echo "https://raw.githubusercontent.com/CHEF-KOCH/CKs-FilterList/master/Anti-Cor
 ##https://github.com/anudeepND/blacklist :
 echo "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://raw.githubusercontent.com/anudeepND/blacklist/master/CoinMiner.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
-##echo "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null              #Anudeep ND (WhiteList)#
+##echo "https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null              #Anudeep ND #WhiteList
 
 ##https://v.firebog.net/hosts/ :
 ##WaLLy3K's somewhat private mirror => Advertisement Lists
 echo "https://v.firebog.net/hosts/AdAway.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
-##echo "https://v.firebog.net/hosts/Disconnect-ads.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                  #Pi_Hole_default#
-##echo "https://v.firebog.net/hosts/HPHosts-ads.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                     #Pi_Hole_default#
+##echo "https://v.firebog.net/hosts/Disconnect-ads.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                  #Pi_Hole_default #
+##echo "https://v.firebog.net/hosts/HPHosts-ads.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                     #Pi_Hole_default #
 echo "https://v.firebog.net/hosts/Easylist.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://v.firebog.net/hosts/Easylist-Dutch.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://v.firebog.net/hosts/Easyprivacy.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://v.firebog.net/hosts/SBUnchecky.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://v.firebog.net/hosts/AdguardDNS.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
-##echo "https://v.firebog.net/hosts/Prigent-Ads.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                     #UNSURE#
+##echo "https://v.firebog.net/hosts/Prigent-Ads.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                     #UNSURE #
 echo "https://v.firebog.net/hosts/SB2o7Net.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null  
 
 
 ##EXTRA/MORE/VARIOUS :
-##echo "http://sysctl.org/cameleon/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                                #Pi_Hole_default#
+##echo "http://sysctl.org/cameleon/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null                                                                #Pi_Hole_default #
 echo "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://raw.githubusercontent.com/zpacman/Blockzilla/master/Blockzilla.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
 echo "https://phishing.army/download/phishing_army_blocklist_extended.txt" | sudo tee -a /etc/pihole/adlists.list > /dev/null
