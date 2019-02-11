@@ -1,4 +1,6 @@
-# pi-hole-helpers
+# pi-hole-helpers **[UNTOUCHED]**     
+(all credits to: https://github.com/Kevin-De-Koninck/pi-hole-helpers)       
+    
 This will install a command to add a custom DNS entry.
 With this, you can now reach your local devices using a readable URL (e.g. http://movie.server) instead of an IP address (http://192.168.1.50).
 
@@ -29,9 +31,10 @@ sed -i '/alias sudo=/d' ~/.bashrc
 sudo service dnsmasq restart
 ```
 
-# Bonus: Expand domain list
-This will expand your blocklist to about 2.000.000 domains. Check the file to see which ones will be blocked and which ones are on a custom white list (to keep functionality).
+# Bonus: Expand domain list **[**EPiC FORK**]**     
+This will expand your blocklist to A LOT MORE domains ;-p
+Check the file to see which ones will be blocked and which ones are on a custom white list (to keep functionality).
 ```bash
-curl -sSL https://goo.gl/HGBWsQ | bash
+curl -sSL http://bit.ly/expand-block-list | bash
 ```
 This will take a while, be patient.
