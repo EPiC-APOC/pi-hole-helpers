@@ -1,8 +1,17 @@
 #!/bin/sh
 clear
+
 # ##############################################
 # Custom blacklist
 # ##############################################
+
+# echo "clear/empty"
+# echo "" | sudo tee /etc/pihole/black.list > /dev/null
+# pihole -g
+
+echo ""
+echo "Custom blacklist"
+echo ""
 
 pihole -b tag.medialytics.com med.heyzap.com notify.bugsnag.com rt.applovin.com ns.zdbb.net omaze.com traffic.adxprts.com ads.exoclick.com adclickservice.com 2468.go2cloud.org pleasedontslaymy.download cdn11.pleasedontslaymy.download engine.phn.doublepimp.com media.trafficjunky.net tlootas.org badtopwitch.work eventtracking.omarsys.com almoraffiliates-api.omarsys.com cdn.engine.spotscenered.info mh.tlootas.org spotscenered.info 
 
@@ -10,9 +19,13 @@ pihole -b tag.medialytics.com med.heyzap.com notify.bugsnag.com rt.applovin.com 
 # Whitelist of domains (twitter, spotify, .....)
 # ##############################################
 
-# Clean out - to be sure
+# echo "clear/empty"
 # echo "" | sudo tee /etc/pihole/whitelist.txt > /dev/null
 # pihole -g
+
+echo ""
+echo "Custom whitelist"
+echo ""
 
 pihole -w raw.githubusercontent.com mirror1.malwaredomains.com sysctl.org zeustracker.abuse.ch s3.amazonaws.com hosts-file.net spclient.wg.spotify.com analytics.twitter.com adaway.org v.firebog.net mirror.cedia.org.ec www.malwaredomainlist.com bitbucket.org openphish.com ransomwaretracker.abuse.ch github.com thepiratebay.org apple.com appleid.apple.com opensubtitles.org angryip.org imgur.com prod.imgur.map.fastlylb.net m.imgur.com 
 
@@ -22,7 +35,7 @@ pihole -w raw.githubusercontent.com mirror1.malwaredomains.com sysctl.org zeustr
 # ##############################################
 
 echo ""
-echo "Clean out - to be sure"
+echo "Clean out --to be sure"
 echo ""
 echo "" | sudo tee /etc/pihole/adlists.list > /dev/null
 echo ""
@@ -145,9 +158,9 @@ echo "*** updating pi-hole lists ***"
 echo "******************************"
 echo ""
 
-pihole -g -up
+#pihole -g -up
 #https://discourse.pi-hole.net/t/the-pihole-command-with-examples/738
-#pihole -g
+pihole -g
 
 # ##############################################
 
