@@ -1,4 +1,5 @@
 #!/bin/sh
+clear
 # ##############################################
 # Custom blacklist
 # ##############################################
@@ -19,6 +20,14 @@ pihole -w raw.githubusercontent.com mirror1.malwaredomains.com sysctl.org zeustr
 # ##############################################
 # Pi-Hole's block lists
 # ##############################################
+
+echo ""
+echo "Clean out - to be sure"
+echo ""
+echo "" | sudo tee /etc/pihole/adlists.list > /dev/null
+echo ""
+pihole -g
+echo ""
 
 #### Pi_Hole defaults :
 echo "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" | sudo tee -a /etc/pihole/adlists.list > /dev/null
@@ -144,7 +153,7 @@ pihole -g -up
 
 
 echo ""
-date >> /home/pi/scripts/pihole-update.log
+date >> /tmp/expand-block-list.log
 echo ""
 echo "******************************"
 echo "*** pi-hole lists updated  ***"
